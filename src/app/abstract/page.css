@@ -1,0 +1,205 @@
+/* File: src/components/FormUI.css */
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin: 50px;
+}
+
+.form-section {
+  width: 100%;
+  max-width: 45%;
+}
+
+.temp {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.tempbtn {
+  background-image: linear-gradient(to right, rgb(211, 115, 115), #f97916);
+  color: white;
+  border: none;
+  padding: 15px;
+  padding-inline: 20px;
+  font-size: 18px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.template {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 3px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.file-info {
+  font-size: 12px;
+  color: #666;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  padding-inline: 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.topics-section {
+  width: 100%;
+  max-width: 45%;
+}
+
+.topics-section h3 {
+  margin-bottom: 15px;
+}
+
+.topics-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 70%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* For Webkit browsers (Chrome, Edge, Safari) */
+.topics-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.topics-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.topics-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.topics-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* For Firefox */
+.topics-list {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.topic-item {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.topic-item:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.content-div{
+  padding: 20px; 
+  padding-inline: 80px;
+  margin-bottom: 50px 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .form-section,.topics-section {
+    max-width: 100%;
+  }
+
+  .content-div{
+    margin: 0px;
+    padding-inline:20px;
+  }
+
+  .form-section,
+  .topics-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .temp {
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .tempbtn {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .topics-list {
+    max-height: 50%;
+  }
+
+  .topic-item {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tempbtn,
+  .submit-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 6px;
+  }
+
+  .topic-item {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+}

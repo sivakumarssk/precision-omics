@@ -1,0 +1,30 @@
+
+.listMain{
+    max-width: 90%;
+    margin: 90px;
+}
+.list-h3-div{
+    margin-bottom: 30px;
+}
+
+.list-item-div{
+    display: flex;
+    border: solid 1px #e79391;
+    padding:20px;
+    gap:15px;
+    margin-bottom:10px
+}
+
+@media (max-width: 768px)  {
+    .listMain{
+        margin: 0px;
+        margin-block: 40px;
+        margin-inline: 20px;
+    }
+    .list-item-div{
+        display: flex;
+        flex-direction: column;
+        padding:10px;
+        margin-bottom:15px
+    }
+}

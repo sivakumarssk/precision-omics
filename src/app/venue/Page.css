@@ -1,0 +1,28 @@
+.venueMain {
+    margin: 80px;
+}
+
+.imgCon {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-block: 20px;
+}
+
+.imgVenue {
+    max-width: 100%;
+    width: 380px;
+    max-height:520px;
+    border: solid 1px black;
+    padding: 5px
+}
+
+    @media (max-width:768px) {
+        .venueMain {
+            margin-block: 30px;
+            margin-inline: 20px;
+        }
+        .imgVenue {
+            margin-bottom: 15px;
+        }
+    }

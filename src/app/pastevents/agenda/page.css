@@ -1,0 +1,33 @@
+
+.pdfCon{
+    width:65%;
+    margin-inline:18%;
+    margin-block: 5%;
+    margin-top: 3%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.datesContainer{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-inline: 5%;
+    gap: 10px;
+}
+
+/* .datesContainer button {
+    
+} */
+
+@media (max-width:768px) {
+    .pdfCon{
+        width:100%;
+        margin-inline:0%;
+        margin-block: 5%;
+    }
+}

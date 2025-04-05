@@ -1,0 +1,150 @@
+.plans-container {
+  display: flex; /* Enable Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Ensure the container takes the full viewport height */
+  padding: 20px; /* Add some padding for better appearance */
+  background-color: #f5f5f5; /* Optional: Add a background color */
+}
+
+.form-section {
+  width: 100%;
+  max-width: 70%; /* Limit the form's maximum width */
+  background-color: #ffffff; /* White background for the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for a floating effect */
+  padding: 20px; /* Add some padding inside the form */
+  border-radius: 8px; /* Add rounded corners */
+}
+
+.plans-table,
+.accommodations-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.plans-table th,
+.plans-table td,
+.accommodations-table th,
+.accommodations-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.plans-table th {
+  background-color: #f8cb00;
+  color: white;
+}
+
+.plans-table th.active-plan {
+  background-color: #4caf50;
+  color: white;
+}
+
+.plans-table th.inactive-plan {
+  background-color: #ffc107;
+  color: black;
+}
+
+.accommodations-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.plan-head {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  justify-self: center;
+  align-self: center;
+}
+
+.total-price-container,
+.submit-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block: 20px;
+}
+
+.paymentCon{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-block: 30px;
+}
+.paymentSubCon{
+  display: flex;
+  gap: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .form-section {
+    max-width: 90%;
+  }
+
+  .plans-table th,
+  .plans-table td,
+  .accommodations-table th,
+  .accommodations-table td {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-section {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .plans-table,
+  .accommodations-table {
+    font-size: 12px;
+  }
+
+  .plans-table th,
+  .plans-table td,
+  .accommodations-table th,
+  .accommodations-table td {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .plans-container {
+    padding: 10px;
+  }
+
+  .form-section {
+    padding: 10px;
+  }
+
+  .plans-table th,
+  .plans-table td,
+  .accommodations-table th,
+  .accommodations-table td {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .plan-head {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .total-price-container {
+    font-size: 14px;
+  }
+}
