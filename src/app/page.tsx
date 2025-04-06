@@ -79,7 +79,7 @@ export default function Home() {
 
       <EventSchedules data={homeData} />
 
-      <ImageGallery data={imageData || []}/>
+      {/* <ImageGallery data={imageData || []}/> */}
 
 
       {/* <FunFact /> */}

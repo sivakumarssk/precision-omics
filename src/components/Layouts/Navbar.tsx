@@ -119,11 +119,11 @@ const menus = [
         label: "Abstract",
         link: "/abstract/",
       },
-      {
-        label: "Past Events",
-        link: "#",
-        submenu: dynamicMenus,
-      },
+      // {
+      //   label: "Past Events",
+      //   link: "#",
+      //   submenu: dynamicMenus,
+      // },
     
       {
         label: "Guidelines",
